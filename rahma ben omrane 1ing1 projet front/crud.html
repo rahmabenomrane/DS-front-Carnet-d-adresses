@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERER LA LISTE DE CONTACTS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id ='titre'>
+    <h1>GERER LA LISTE DE CONTACTS</h1>
+    <div id="controls">
+        <button id="clearcontact-btn" disabled>
+            <img src="corbeille.png" alt="Icône Effacer">
+        </button>
+        
+        <button id="new-contact-btn">
+            <img src="icone-plus.png" alt="Icône Effacer">
+        </button>
+    </div>
+    </div>
+    <div class="container">
+        <div class="contacts-container">
+            <h2>Contacts Enregistrés</h2>
+            <div id="contacts-list"></div>
+        </div>
+        <div class="form-container">
+            <div id="contact-form" style="display:none;">
+                <h2>Ajouter un contact</h2>
+                <select id="gender">
+                    <option value="Madame">Madame</option>
+                    <option value="Mademoiselle">Mademoiselle</option>
+                    <option value="Monsieur">Monsieur</option>
+                </select>
+                <input type="text" id="first-name" placeholder="Prénom">
+                <input type="text" id="last-name" placeholder="Nom">
+                <input type="text" id="phone" placeholder="Numéro de téléphone">
+                <button id="save-contact-btn">Enregistrer</button>
+                <button id="clear-form-btn">Effacer formulaire</button>
+            </div>
+            <div id="contact-details">
+                <h2>Détails du contact</h2>
+                <p id="details"></p>
+                <button id="edit-contact-btn">Editer le contact</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("background2.jpg");
+   }
+
+   .container {
+    position: relative; /* Définir le conteneur comme référence pour les positions absolues */
+}
+/* Style pour le conteneur principal */
+#text {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Hauteur de la vue à 100% pour prendre toute la hauteur de la fenêtre */
+}
+
+/* Style pour le conteneur central */
+.center-text {
+    text-align: center; /* Centrer le texte horizontalement */
+}
+
+/* Style pour le titre */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Ajouter un espace sous le titre */
+}
+
+/* Style pour les boutons */
+#controls {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    gap: 10px; /* Ajouter un espacement entre les boutons */
+}
+
+/* Style pour les icônes dans les boutons */
+#controls button img {
+    width: 20px; /* Définir la largeur de l'icône */
+    height: 20px; /* Définir la hauteur de l'icône */
+}
+
+
+.contacts-container {
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan noir transparent */
+    color: white; /* Couleur du texte blanc pour contraster */
+    margin-left: 20px;
+    margin-top: 20px;
+    top: 0; /* Aligner en haut */
+}
+
+
+.form-container {
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan noir transparent */
+    color: white; /* Couleur du texte blanc pour contraster */
+    display: none; /* Cacher initialement le conteneur des formulaires */
+    position: absolute; /* Position absolue pour afficher par-dessus les contacts */
+    right: 10px; /* Aligner à gauche */
+    top: 0; /* Aligner en haut */
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+
+#contact-details {
+    border-radius: 10px;
+    color: white; /* Couleur du texte blanc pour contraster */
+    display: none; /* Cacher le conteneur des détails du contact initialement */
+}
+/* Style par défaut pour les contacts */
+.contact {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid white; /* Bordure blanche par défaut */
+    cursor: pointer; /* Curseur indiquant que le contact est cliquable */
+    
+}
+
+/* Style pour les contacts sélectionnés */
+.contact.selected {
+    background-color: rgb(229, 73, 38); /* Fond orange pour les contacts sélectionnés */
+}
+#controls{
+    display: flex;
+    gap: 10px; /* Ajouter un espacement entre les boutons */
+    align-content: center;
+}
+#controls button img {
+    width: 20px; /* Définir la largeur de l'icône */
+    height: 20px; /* Définir la hauteur de l'icône */
+    margin-right: 5px; /* Ajouter un espacement à droite de l'icône */
+}
+input[type="text"],
+select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan gris transparent pour les champs */
+    color: #333; /* Couleur du texte */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f65814;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid #f7f4f4;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
